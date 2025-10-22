@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Water Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💧 Charity Water Game 💧</h1>
+            <p class="subtitle">Help provide clean water to communities in need!</p>
+        </header>
+        
+        <div class="game-info">
+            <div class="score-container">
+                <span class="label">Water Drops Collected:</span>
+                <span id="score" class="score">0</span>
+            </div>
+            <div class="timer-container">
+                <span class="label">Time:</span>
+                <span id="timer" class="timer">30</span>
+            </div>
+            <div class="lives-container">
+                <span class="label">Lives:</span>
+                <span id="lives" class="lives">❤️❤️❤️</span>
+            </div>
+        </div>
+
+        <div id="game-container" class="game-container">
+            <div id="start-screen" class="screen">
+                <h2>Welcome to Charity Water!</h2>
+                <p>Catch the falling water drops to help provide clean water.</p>
+                <p>Avoid the pollution drops (💀) - they'll cost you a life!</p>
+                <p>Collect as many water drops as you can in 30 seconds!</p>
+                <button id="start-button" class="btn">Start Game</button>
+            </div>
+
+            <div id="game-screen" class="screen hidden">
+                <div id="game-area">
+                    <div id="bucket" class="bucket">🪣</div>
+                </div>
+            </div>
+
+            <div id="end-screen" class="screen hidden">
+                <h2>Game Over!</h2>
+                <p id="final-score"></p>
+                <p id="impact-message"></p>
+                <button id="restart-button" class="btn">Play Again</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Every drop counts! This game raises awareness about clean water access.</p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
